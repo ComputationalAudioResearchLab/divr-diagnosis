@@ -30,7 +30,7 @@ jobs:
           pip install pipenv
           pipenv install --ignore-pipfile --dev
       - name: Lint files
-        run: pipenv run black divr_diagnosi --check
+        run: pipenv run black divr_diagnosis --check
       - name: Build distribution
         run: pipenv run python -m build
         env:
