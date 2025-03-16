@@ -23,9 +23,9 @@ setup(
     install_requires=["PyYAML>=6.0.1"],
     classifiers=[
         "Development Status :: 4 - Beta",
-        "Intended Audience :: Researchers",
+        "Intended Audience :: Science/Research",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        "Topic :: Utilities",
+        "Topic :: Scientific/Engineering",
     ],
 )

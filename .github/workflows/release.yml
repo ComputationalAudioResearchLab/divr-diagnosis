@@ -31,6 +31,8 @@ jobs:
           pipenv install --ignore-pipfile --dev
       - name: Lint files
         run: pipenv run black divr_diagnosis --check
+      - name: Test
+        run: pipenv run pytest
       - name: Build distribution
         run: pipenv run python -m build
         env:
