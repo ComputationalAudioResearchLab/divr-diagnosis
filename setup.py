@@ -7,6 +7,9 @@ with open("README.md", "r") as readme:
 setup(
     name="divr-diagnosis",
     packages=["divr_diagnosis"],
+    package_data={
+        "divr_diagnosis": ["diagnosis_maps/*.yml"],
+    },
     version=os.environ["RELEASE_VERSION"],
     license="MIT",
     description="Toolkit to standardize voice disorder diagnostic labels",
