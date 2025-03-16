@@ -14,7 +14,7 @@ setup(
     license="MIT",
     description="Toolkit to standardize voice disorder diagnostic labels",
     author="Computational Audio Research Lab",
-    url="https://github.com/ComputationalAudioResearchLab/divr-benchmark/diagnosis",
+    url="https://github.com/ComputationalAudioResearchLab/divr-diagnosis",
     keywords=[
         "ML Audio Features",
         "ML",
