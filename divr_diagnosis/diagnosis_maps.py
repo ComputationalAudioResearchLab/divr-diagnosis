@@ -29,6 +29,10 @@ class FEMH_2018(DiagnosisMap):
     pass
 
 
+class FEMH_2025(DiagnosisMap):
+    pass
+
+
 class Firdos_2016(DiagnosisMap):
     pass
 
