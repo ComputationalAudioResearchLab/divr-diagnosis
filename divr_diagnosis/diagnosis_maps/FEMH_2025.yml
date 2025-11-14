@@ -1,0 +1,363 @@
+#### Level 0
+normal:
+  alias:
+    - healthy
+    - normal
+    - normal voice
+  level: 0
+pathological:
+  alias:
+    - pathological
+    - pathological voice- diagnosis n/a
+  level: 0
+unclassified:
+  alias:
+    - mixed
+    - not sure
+    - other
+    - unknown
+    - others
+  level: 0
+
+#### Level 1
+functional:
+  alias: []
+  level: 1
+  parents:
+    pathological: 1.0
+muscle_tension:
+  alias:
+    - muscle tension dysphonia
+    - muscle tension dysphonia (primary)
+  level: 1
+  parents:
+    pathological: 1.0
+non_laryngeal:
+  level: 1
+  parents:
+    pathological: 1.0
+organic:
+  alias: []
+  level: 1
+  parents:
+    pathological: 1.0
+
+#### Level 2
+functional_dysphonia:
+  alias:
+    - functional dysphonia
+    - functional voice disorder
+    - funktionelle dysphonie
+  level: 2
+  parents:
+    functional: 1.0
+functional_puberphonia:
+  alias: []
+  level: 2
+  parents:
+    functional: 1.0
+metabolic:
+  alias:
+    - endocrine
+  level: 2
+  parents:
+    non_laryngeal: 1.0
+muscle_tension_adaptive:
+  alias:
+    - muscle tension adaptive dysphonia
+    - muscle tension/adaptive dysphonia (secondary)
+  level: 2
+  parents:
+    muscle_tension: 1.0
+organic_inflammatory:
+  alias: []
+  level: 2
+  parents:
+    organic: 1.0
+organic_neuro_muscular:
+  alias: []
+  level: 2
+  parents:
+    organic: 1.0
+organic_structural:
+  alias: []
+  level: 2
+  parents:
+    organic: 1.0
+organic_trauma:
+  alias: []
+  level: 2
+  parents:
+    organic: 1.0
+psychiatric:
+  alias:
+    - psychological
+  level: 2
+  parents:
+    non_laryngeal: 1.0
+respiratory:
+  level: 2
+  parents:
+    organic: 1.0
+systemic:
+  level: 2
+  parents:
+    non_laryngeal: 1.0
+
+#### Level 3
+organic_inflammatory_infective:
+  alias: []
+  level: 3
+  parents:
+    organic_inflammatory: 1.0
+organic_inflammatory_non_infective:
+  alias: []
+  level: 3
+  parents:
+    organic_inflammatory: 1.0
+organic_neuro_muscular_central_nervous_disorder:
+  alias: []
+  level: 3
+  parents:
+    organic_neuro_muscular: 1.0
+organic_neuro_muscular_movement_disorder:
+  alias: []
+  level: 3
+  parents:
+    organic_neuro_muscular: 1.0
+organic_neuro_muscular_peripheral_nervous_disorder:
+  alias: []
+  level: 3
+  parents:
+    organic_neuro_muscular: 1.0
+organic_structural_congenital:
+  alias: []
+  level: 3
+  parents:
+    organic_structural: 1.0
+organic_structural_epithelial_propria:
+  alias: []
+  level: 3
+  parents:
+    organic_structural: 1.0
+organic_structural_malignancy:
+  alias: []
+  level: 3
+  parents:
+    organic_structural: 1.0
+organic_structural_structural_abnormality:
+  alias: []
+  level: 3
+  parents:
+    organic_structural: 1.0
+organic_structural_vascular:
+  alias: []
+  level: 3
+  parents:
+    organic_structural: 1.0
+organic_trauma_external:
+  alias: []
+  level: 3
+  parents:
+    organic_trauma: 1.0
+organic_trauma_internal:
+  alias: []
+  level: 3
+  parents:
+    organic_trauma: 1.0
+
+#### Level 4
+polyps:
+  alias:
+    - vocal fold polyp
+    - vocal polyp
+    - polyp
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+nodules:
+  alias:
+    - vocal nodules
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+#attention
+atrophy:
+  alias:
+    - vocal fold atrophy
+  level: 4
+  parents:
+    organic_structural_congenital: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_congenital
+
+cyst:
+  alias:
+    - vocal fold cyst
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+vocal paresis:
+  alias:
+    - vocal fold paralysis
+    - vocal fold paresis
+    - vocal fold hypomobility
+  level: 4
+  parents:
+    organic_neuro_muscular_peripheral_nervous_disorder: 1.0
+  votes:
+    clinician 1: organic > organic_neuro_muscular > organic_neuro_muscular_peripheral_nervous_disorder
+
+vocal palsy:
+  alias:
+    - vocal fold palsy
+  level: 4
+  parents:
+    organic_neuro_muscular_movement_disorder: 1.0
+  votes:
+    clinician 1: organic > organic_neuro_muscular > organic_neuro_muscular_movement_disorder
+
+reinke's edema:
+  alias:
+    - reinke edema
+    - reinke's edema
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+sulcus:
+  alias:
+    - sulcus vocalis
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+muscle tension dysphonia:
+  alias:
+    - muscle tension
+    - muscle tension dysphonia secondary to organic pathology
+  level: 4
+  parents:
+    muscle_tension_adaptive: 1.0
+  votes:
+    clinician 1: pathological > muscle_tension > muscle_tension_adaptive
+
+presbyphonia:
+  alias:
+    - presbyphonia
+    - presbylarynx
+  level: 4
+  parents:
+    organic_structural_congenital: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_congenital
+
+vocal process granuloma:
+  alias:
+    - vocal process granuloma
+    - contact granuloma
+  level: 4
+  parents:
+    organic_structural_structural_abnormality: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_structural_abnormality
+
+fibrous mass:
+  alias:
+    - mass
+  level: 4
+  parents:
+    organic_structural_structural_abnormality: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_structural_abnormality
+
+ulcer:
+  alias:
+    - contact ulcer
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+spasmodic dysphonia:
+  alias:
+    - spasmodic dysphonia
+    - laryngeal dystonia
+  level: 4
+  parents:
+    organic_neuro_muscular_movement_disorder: 1.0
+  votes:
+    clinician 1: organic > organic_neuro_muscular > organic_neuro_muscular_movement_disorder
+
+dysplasia:
+  alias:
+    - dysplasia
+  level: 4
+  parents:
+    organic_structural_structural_abnormality: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_structural_abnormality
+
+laryngeal cancer:
+  alias:
+    - laryngeal cancer
+    - laryngeal carcinoma
+    - laryngeal malignancy
+    - laryngeal neoplasm
+  level: 4
+  parents:
+    organic_structural_malignancy: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_malignancy
+
+papilloma:
+  alias:
+    - laryngeal papilloma
+    - recurrent respiratory papillomatosis
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+tremor:
+  alias:
+    - vocal tremor
+  level: 4
+  parents:
+    organic_neuro_muscular_movement_disorder: 1.0
+  votes:
+    clinician 1: organic > organic_neuro_muscular > organic_neuro_muscular_movement_disorder
+
+scar:
+  alias:
+    - vocal fold scar
+    - scar
+  level: 4
+  parents:
+    organic_structural_epithelial_propria: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_epithelial_propria
+
+varix:
+  alias:
+    - vocal fold varix
+  level: 4
+  parents:
+    organic_structural_vascular: 1.0
+  votes:
+    clinician 1: organic > organic_structural > organic_structural_vascular
